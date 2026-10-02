@@ -1,0 +1,23 @@
+# clasp / Apps Script local state
+.clasp.json
+.clasprc.json
+
+# real configuration, never committed
+src/Config.js
+.env
+*.local.js
+
+# node
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# scratch
+tmp/
+*.log

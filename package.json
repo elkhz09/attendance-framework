@@ -1,0 +1,17 @@
+{
+  "name": "attendance-framework",
+  "version": "0.1.0",
+  "description": "Google Apps Script + Telegram daily attendance framework, backed by a Google Sheet. Person-keyed identity, so personnel rotation does not corrupt history.",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@google/clasp": "^2.4.2"
+  },
+  "scripts": {
+    "push": "clasp push",
+    "pull": "clasp pull",
+    "open": "clasp open",
+    "logs": "clasp logs --watch",
+    "deploy": "echo 'Use: clasp deploy -i $DEPLOYMENT_ID -d \"<message>\" — see docs/DEPLOYMENT.md'"
+  }
+}
