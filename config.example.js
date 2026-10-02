@@ -78,7 +78,11 @@ var CONFIG = {
   // ---- Telegram ---------------------------------------------------------
   // Telegram numeric user ids allowed to run admin commands. Find yours by
   // sending /whoami to the bot once it is live.
-  ADMIN_TELEGRAM_IDS: [000000001, 000000002],
+  //
+  // Quoted on purpose. A bare 000000001 is parsed as a legacy octal literal and
+  // silently becomes the number 1, which then matches nobody. Ids are compared
+  // as strings throughout.
+  ADMIN_TELEGRAM_IDS: ['000000001', '000000002'],
 
   // Longest single outbound message. Telegram's hard cap is 4096 characters
   // and it rejects the whole message, not the tail. Leave headroom.
