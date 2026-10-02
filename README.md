@@ -210,6 +210,12 @@ roughly 130-person operational unit. This repository is generic by design and
 shares no code with that deployment. The lessons above are from it; the code here
 was written from scratch.
 
+The deployment it is drawn from is not described here beyond that. No
+organisation, identifiers, configuration or operational detail from it appears
+in this repository, and none will. What is published is the architecture and the
+failure modes, both of which generalise to any organisation running a daily
+roll-call.
+
 Issues and pull requests welcome. If you are adapting it for your own
 organisation, the three things to change first are `CONFIG.RESPONSES`,
 `GROUP_LABEL` and `SUBGROUP_LABEL`.
